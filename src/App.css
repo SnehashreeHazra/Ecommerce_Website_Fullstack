@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+ul li{
+  list-style-type: none;
+}
+
 .header_wrapper{
   display: flex;
   justify-content: space-around;
@@ -77,4 +81,63 @@
   font-size: 14px;
   background: red;
   color: white;
+}
+
+
+/* *********************Footer CSS******************* */
+
+.footer{
+  width: 100%;
+  max-width: 80%;
+  min-width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.footer_logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_logo p{
+  font-size: 23px;
+  font-weight: 600;
+  color: #515151;
+}
+.footer_links{
+  display: flex;
+  column-gap: 30px;
+  margin-top: 15px;
+  color: #626262;
+  cursor: pointer;
+}
+.footer_social_links{
+  display: flex;
+  column-gap: 20px;
+  margin-top: 15px;
+}
+.footer_social_links i{
+  font-size: 20px;
+  cursor: pointer;
+  color: #626262;
+}
+.footer_copyright{
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+.footer_copyright hr{
+  background: #c7c7c7;
+  height: 3px;
+  border-radius: 10px;
+  border: none;
+}
+.footer_copyright p{
+  margin-top: 10px;
+  font-size: 12px;
+  color: #626262;
 }
