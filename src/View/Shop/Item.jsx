@@ -1,9 +1,10 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Item = (props) => {
   return (
     <div className='item'>
-      <img src={props.image} alt="" />
+      <NavLink to={`/product/${props.id}`}><img src={props.image} alt="" /></NavLink>
       <p>{props.name}</p>
       <div className="item_prices">
         <div className="item_new_price">
