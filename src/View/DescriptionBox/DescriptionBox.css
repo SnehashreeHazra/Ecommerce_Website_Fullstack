@@ -1,0 +1,34 @@
+.description_box{
+  width: 100%;
+  max-width: 80%;
+  min-width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.description_box_navigator{
+  display: flex;
+  column-gap: 15px;
+  margin-bottom: 10px;
+}
+.description_box_nav_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border-radius: 5px; 
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 13px;
+}
+.description_box_nav_box .fade{
+  background-color: #fbfbfb;
+  color: #555;
+}
+.description_box_description{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  border: 1px solid #d0d0d0;
+  padding: 40px;
+  /* padding-bottom: 70px; */
+}
