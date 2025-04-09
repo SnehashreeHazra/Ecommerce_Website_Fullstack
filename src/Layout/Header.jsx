@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import logo from '../assets/logo.png'
 import cart_icon from '../assets/cart_icon.png'
 import { NavLink } from 'react-router-dom'
+import { ShopContext } from '../Context/ShopContext'
 
 const Header = () => {
-  const [menu,setMenu] = useState("shop")
+  const [menu,setMenu] = useState("shop");
+  const {getTotalCartItems} = useContext(ShopContext);
   return (
     <div className='header_wrapper'>
       <div className="header_logo">
@@ -20,7 +22,7 @@ const Header = () => {
       <div className="header_login_cart">
         <NavLink to="/login"><button>Login</button></NavLink>
         <NavLink to="/cart"><img src={cart_icon} alt="" /></NavLink>
-        <div className="header_cart_count">0</div>
+        <div className="header_cart_count">{getTotalCartItems()}</div>
       </div>
     </div>
   )
